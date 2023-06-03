@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    object-fit: cover;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
@@ -29,6 +30,10 @@ label.logo {
     letter-spacing: 1px;
 }
 
+label.logo img {
+    width: 1em;
+}
+
 nav ul {
     float: right;
     margin-right: 20px;
@@ -46,11 +51,24 @@ nav ul li a {
     font-size: 17px;
     text-transform: uppercase;
     padding: 7px 13px;
-    border-radius: 3px;
+    border-radius: 50px;
+    box-shadow: 0 2px 3px black;
 }
 
 a.active,
 a:hover {
     background-color: #63abe2;
     transition: .5s;
+}
+
+.bars {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.checkbtn {
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
 }
